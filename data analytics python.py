@@ -297,9 +297,19 @@
 # pallindrome("madam")
 # pallindrome("ankit")
 
-def hello():
-    return"hello bro how are you"
 
-print(hello())
 
+# def hello():
+#     return"hello bro how are you"
+
+# print(hello())
+
+
+
+# DATA STRUCTURE IN PYTHON  
+# LIST IN PYTHON
+a = [12, 23, 24, 22, "true", "ankit"]
+print(a[2])
+print(a[3])
+print(a[::])
 
