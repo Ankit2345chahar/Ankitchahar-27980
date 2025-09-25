@@ -358,14 +358,67 @@
 
 # Print positive and negative elements of an List
 
-l = [1,2,3,4,5,-6,-8,-9,-33,55,22,8,-8]
-print("postive element")
-for i in l:
-   if i>0:
-      print(i)
-      print("negative element")
-      for i in l:
-         if i<0:
-            print(i)
+# l = [1,2,3,4,5,-6,-8,-9,-33,55,22,8,-8]
+# print("postive element")
+# for i in l:
+#    if i>0:
+#       print(i)
+#       print("negative element")
+#       for i in l:
+#          if i<0:
+#             print(i)
  
+
+# Mean of List elements
+
+# l = [22,44,66,888,33,999,22,66,333,444,8865,44,2,44,33]
+# sum = 0
+# for i in l:
+#     sum = sum + i
+#     print(sum/len(l))
+  
+
+# Taking input from user
+
+# numbers = list(map(float, input("Enter the number find a list  mean:-").split()))
+# mean = sum(numbers) / len(numbers)
+# print("Mean of the list elements is:", mean)
+
+
+
+# Find the greatest element and its index
+
+# l = [22, 444, 22, 6, 88, 77, 234, 887, 888, 987, 1000, 33, 66, 99, 33, 55, 888]
+# largest = 0
+# index = 0
+
+# for i in range(len(l)):
+#     if l[i] > largest:
+#         largest = l[i]
+#         index = i
+
+# print(f"Your largest number is {largest} at index {index}")
+
+
+# Find the second greatest element.
+
+# l = [12,14,16,12,44,66,55,44,33,22,89,67]
+
+# largest = l[0]
+# sec_largest = l[0]
+
+# for i in l:
+#     if i > largest:
+#         sec_largest = largest
+#         largest = i
+#     elif i > sec_largest and i != largest:
+#         sec_largest = i
+
+# print(f"Largest number: {largest}")
+# print(f"Second largest number: {sec_largest}")
+
+
+
+
+
 
