@@ -308,8 +308,64 @@
 
 # DATA STRUCTURE IN PYTHON  
 # LIST IN PYTHON
-a = [12, 23, 24, 22, "true", "ankit"]
-print(a[2])
-print(a[3])
-print(a[::])
+# a = [12, 23, 24, 22, "true", "ankit"]
+# print(a[2])
+# print(a[3])
+# print(a[::])
+
+#  1st way method indexing 
+# a = [12, 23, 24, 22, "true", "ankit"]
+# for i in range(len(a)):
+#     print(i)
+
+# for i in range(len(a)):
+#     print(a[i])
+
+
+
+# #2nd way method
+# for i in a:
+#     print(i)
+
+
+# a = [8,7,9,0,0,True,"@"]
+# print(a[0:4])
+
+# print(dir(list))
+
+
+# append
+# l = [2,4,66,99,8]
+# l.append(6)
+# print(l)
+
+# insert 
+# l = [1,3,4,5,6]
+# l.insert(1,2)
+# print(l)
+
+# help(list)
+
+# remove
+# l =[1,2,3,4,5,6]
+# l.remove(1)
+# print(l)
+
+# change a value 
+# l = [2,2,3,4,5,6,7,8,9]
+# l[0]=1
+# print(l)
+
+# Print positive and negative elements of an List
+
+l = [1,2,3,4,5,-6,-8,-9,-33,55,22,8,-8]
+print("postive element")
+for i in l:
+   if i>0:
+      print(i)
+      print("negative element")
+      for i in l:
+         if i<0:
+            print(i)
+ 
 
