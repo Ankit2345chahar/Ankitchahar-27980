@@ -433,14 +433,93 @@
 
 # tuple data structure
 
-
-
+# a =(1,2,3,4)
+# print(type(a))
 
         
+# a = (1,2,3,4,5,6,True, "hello")
+# for i in a: # for i in range(len(a))
+#     print(i)
+
+
+# a =(1,2,3,4,5,6,7,8,3,4,5,65,5,5,5)
+# # index = a.index(65)
+# # print(index)
+
+# count =a.count(5)
+# print(count)
+
+#set 
+# s = {1,2,3,4,5,6,6,5,4,3,2,1}
+# print(type(s))
+# print(s)
+
+# a = {1,8,9,"helllo",3,5,6,7,8}
+# for i in a:       #  for i in range(len(a)):
+#     print(i)
+
+# a = {1,2,3,4,5}
+# b = {4,5,6,7,8}
+# s = a.symmetric_difference(b) #a.union(b) , a.intersection(b) , a.difference(b)
+# print(s)
+
+
+# dictiionary 
+
+# d = {1:4,2:"hello"}
+# print(type(d))
+# print(d[2])
+
+# d = {1:100,2:200,3:300,4:"hello"}
+# for i in d:
+#     print(d[i]) # print(i)
+     
+# a = {1,2,3,4}
+# b = a
+# b.remove(1)
+# b.add(20)
+# print(a)
+
+
+# question in dictionary
+
+#  Write a Python script to merge two Python dictionaries.
+
+# d1 = {10:100, 20:200, 30:300}
+#  d2 = {40:400, 50:500, 60:600}
+
+#  d1.update(d2)
+#  print(d1)
+
+# Write a Python program to sum all the values in a dictionary
+# d1 = {10:100, 20:200, 30:300}
+# sum = 0
+# for i in d1:
+#  sum = sum + d1[i]
+# print(sum)
+
+
+# Count the frequency of each elements
+
+# a = [1,1,1,1,2,2,2,3,3,3,3,4,4,4,4,4,5,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,7,8,8,8,8,9,9,9]
+# d = {}
+# for i in a:
+#   if i in d.keys():
+#     d[i] += 1
+#   else:
+#     d[i] = 1
+# print(d)
 
 
 
+# Write a Python program to combine two dictionary by adding values for common keys.
 
-
-
+# d1 = {10:100, 20:200, 40:300}
+# d2 = {40:400, 50:500, 60:600}
+# for i in d2:
+#     if i in d1:
+#         d1[i] += d2[i]
+#     else:
+#         d1[i] = d2[i]
+# print(d1)
 
