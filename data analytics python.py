@@ -553,3 +553,16 @@
 # except Exception as err:
 #     print(f"an error occured as {err}")
 # print("the club will start soon")
+
+
+
+# file handling
+
+# p= open('data analytics python.py')
+# print(p.read())
+
+# create the file 
+
+r = open("superman.txt",'w')
+r.write(" this person not good and what are doing bro")
+r.close()
