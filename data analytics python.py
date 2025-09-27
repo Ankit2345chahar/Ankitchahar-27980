@@ -524,7 +524,32 @@
 # print(d1)
 
 
+# exception handing 
+# a = int(input("tell your number"))
+# try:
+#     print(10/a)
+# except ZeroDivisionError:
+#  print("sorry you cannot divide by 0")
+# print ("ok i have done the division")
+    
 
 
+# a = int(input("please tell your number"))
+# try:
+#     print(20/a)
+# except Exception as err:
+#     print (f"sorry there is an error as 0{err}")
+#     print("ok i have done the division")
 
 
+# write a program above 18 people enter the club 
+
+# age = int(input("please tell your age:-"))
+# try:
+#     if age < 18:
+#         raise ValueError("your age must be above 18")
+#     else:
+#         print("welcome to the club")
+# except Exception as err:
+#     print(f"an error occured as {err}")
+# print("the club will start soon")
