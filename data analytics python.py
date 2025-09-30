@@ -563,6 +563,7 @@
 
 # create the file 
 
-r = open("superman.txt",'w')
-r.write(" this person not good and what are doing bro")
-r.close()
+# r = open("superman.txt",'w')
+# r.write(" this person not good and what are doing bro")
+# r.close()
+
