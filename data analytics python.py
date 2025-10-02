@@ -567,3 +567,80 @@
 # r.write(" this person not good and what are doing bro")
 # r.close()
 
+
+# function approach
+
+# def addition(a,b):
+#     return a+b
+# print(addition(12,13))
+# print(addition(20,20))
+# print(addition(30,30))
+
+
+# class Factory:
+#  a = 12
+
+
+#  def hello(self):
+#   print("how are you")
+# print("hello how are you i am getting intalized")
+#  print(Factory().a)
+#  Factory().hello()
+
+# obj = Factory()
+# print(obj.a)
+# obj.hello()
+
+
+# class Factory:
+#     def __init__(self, material, zips, pockets):
+#         self.material = material
+#         self.zips = zips
+#         self.pockets = pockets
+   
+#     def show(self):
+#         print(f"Your object's details are: Material={self.material}, Zips={self.zips}, Pockets={self.pockets}")
+
+
+# reebok = Factory("leather", 3, 2)
+# campus = Factory("nylon", 3, 3)
+# addidas = Factory("cotton", 5, 7)
+
+ 
+# reebok.show()
+# campus.show()
+# addidas.show()
+
+    
+
+class Animal:
+    def __init__(self, age):
+        self.age = age
+
+    def show(self):
+        print(f"How are you Your age is {self.age}")
+
+    @classmethod
+    def hello(cls):
+        print("How are you brother")
+
+    @staticmethod
+    def static():
+        print("How are you")
+
+
+# Create object
+obj = Animal(12)
+
+# Call instance method
+obj.show()
+
+# Call class method
+Animal.hello()
+
+# Call static method
+Animal.static()
+
+          
+
+    
