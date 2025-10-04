@@ -613,34 +613,246 @@
 
     
 
-class Animal:
-    def __init__(self, age):
-        self.age = age
+# class Animal:
+#     def __init__(self, age):
+#         self.age = age
 
-    def show(self):
-        print(f"How are you Your age is {self.age}")
+#     def show(self):
+#         print(f"How are you Your age is {self.age}")
 
-    @classmethod
-    def hello(cls):
-        print("How are you brother")
+#     @classmethod
+#     def hello(cls):
+#         print("How are you brother")
 
-    @staticmethod
-    def static():
-        print("How are you")
+#     @staticmethod
+#     def static():
+#         print("How are you")
 
 
-# Create object
-obj = Animal(12)
+#  Create object
+# obj = Animal(12)
 
-# Call instance method
-obj.show()
+#  Call instance method
+# obj.show()
 
-# Call class method
-Animal.hello()
+#  Call class method
+# Animal.hello()
 
-# Call static method
-Animal.static()
+#  Call static method
+# Animal.static()
+
+
+
+
+# class factorymumbai:
+#     a = "I am an attribute mentioned inside the factory"
+#     def hello(self):
+#         print("Hello, I am a method mentioned inside the factory")
+# class factorypune(factorymumbai):
+#     pass
+
+# obj = factorypune()
+# obj2 = factorymumbai()
+# print(obj2.hello())
+
+
+
+
+
 
           
+# class Animal:
+#     def __init__(self, name):  
+#         self.name = name
 
-    
+
+#     def show(self):
+#         print(f"Hello, your name is {self.name}")
+
+
+# class Human(Animal): 
+#     def __init__(self, name, age):
+#         super().__init__(name)
+#         self.age = age
+
+#     def show(self):
+#         print(f"Hello, your name is {self.name}, and your age is {self.age}")
+
+
+# Animal1 = Animal("Lion")
+# Animal1.show()
+
+# person1 = Human("Akash", 23)
+# person1.show()
+
+
+# class Animal:
+#     name1 = "lion"
+
+
+# class Human:
+#     name2 = "Harsh"
+
+
+# class Robots(Animal, Human):   
+#     name3 = "charliews233"
+
+
+
+# obj = Robots()
+# print(obj.name1)  
+# print(obj.name2)  
+# print(obj.name3)  
+
+
+
+
+# class Factory:
+#     def __init__(self, material, zips):
+#         self.material = material
+#         self.zips = zips
+
+
+# class BhopalFactory(Factory):   
+#     def __init__(self, material, zips, color):
+#         super().__init__(material, zips) 
+#         self.color = color
+
+
+# class Punefactory(BhopalFactory):
+#     def __init__(self, material, zips, color, pockets):
+#         super().__init__(material, zips, color)
+#         self.pockets = pockets
+
+
+# # Create object with all required parameters
+# obj = Punefactory("leather", 3, "black", 2)
+
+# # Print attributes
+# print("Material:", obj.material)
+# print("Zips:", obj.zips)
+# print("Color:", obj.color)
+# print("Pockets:", obj.pockets)
+
+# # Print class hierarchy
+# print("Class of obj:", obj.__class__.__name__)
+# print("Base class of Punefactory:", Punefactory.__bases__[0].__name__)
+# print("Base class of BhopalFactory:", BhopalFactory.__bases__[0].__name__)
+
+            
+
+# class Animal:
+#     def show(self):
+#         print("hello i am Ankit")
+
+
+# class Human:
+#     def show(self):
+#         print("how are you bro")
+
+# obj = Animal()
+# obj2 = Human()
+
+# obj.show()
+# obj2.show()
+
+
+
+
+
+# abstraction 
+
+#from abc import ABC, abstractmethod
+
+
+# class AbstractShape(ABC):
+
+#     @abstractmethod
+#     def perimeter(self):
+#         pass
+
+#     @abstractmethod
+#     def area(self):
+#         pass
+
+
+
+# class Square(AbstractShape):
+#     def __init__(self, side):
+#         self.side = side
+
+#     def perimeter(self):
+#         print(f"Perimeter of square: {4 * self.side}")
+
+#     def area(self):
+#         print(f"Area of square: {self.side * self.side}")
+
+
+
+# class Circle(AbstractShape):
+#     def __init__(self, radius):
+#         self.radius = radius
+
+#     def perimeter(self):
+#         print(f"Perimeter of circle: {2 * 3.14 * self.radius}")
+
+#     def area(self):
+
+#         print(f"Area of circle: {3.14 * self.radius * self.radius}")
+
+
+
+# obj1 = Circle(7)
+# obj2 = Square(12)
+
+# obj1.perimeter()
+# obj1.area()
+# obj2.perimeter()
+# obj2.area()
+        
+
+# dunder method
+# class Animal:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+#     def __str__(self):
+#         return f"Hello, how are you? Your name is {self.name} and your age is {self.age}."
+
+# obj = Animal("Lion", 5)
+# print(obj)
+
+
+
+
+
+# same question used a dunder
+
+# class Animal:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+#     def __str__(self):
+#         return f"{self.name} ({self.age})"
+
+#     def __add__(self, others):
+#         total_age = self.age
+
+        
+#         if isinstance(others, (tuple, list)):
+#             for obj in others:
+#                 total_age += obj.age
+#             return f"Total combined age is {total_age}."
+#         else:
+         
+#             return f"Total combined age is {self.age + others.age}."
+
+
+# obj1 = Animal("Lion", 12)
+# obj2 = Animal("Dolphin", 14)
+# obj3 = Animal("Tiger", 34)
+
+
+# print(obj1 + (obj2, obj3))
